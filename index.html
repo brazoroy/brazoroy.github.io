@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brazo Roy | Creative & Technology</title>
+<meta name="description" content="Personal portfolio of Brazo Roy - Video Editor, Graphic Designer and technology enthusiast.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #090b10;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav {
+  padding: 22px 0;
+  border-bottom: 1px solid #252832;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a { color: #aaa; font-size: 13px; }
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.tag {
+  color: #a78bfa;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(44px, 9vw, 82px);
+  line-height: 1.08;
+  margin: 22px 0;
+  letter-spacing: -3px;
+}
+
+.gradient {
+  background: linear-gradient(90deg,#a78bfa,#60a5fa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #a5a5b0;
+  font-size: 17px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 23px;
+  border: 1px solid #8b7af4;
+  border-radius: 6px;
+  color: white;
+  width: fit-content;
+}
+
+section { padding: 75px 0; }
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.section-intro {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.about {
+  color: #b8b8c2;
+  max-width: 750px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  margin-top: 30px;
+  max-width: 550px;
+}
+
+.stat {
+  background: #141720;
+  border: 1px solid #252a38;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 28px;
+  color: #a78bfa;
+}
+
+.stat span { color: #aaa; font-size: 13px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #141720;
+  border: 1px solid #282d3a;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.card h3 { margin-bottom: 10px; }
+
+.card p {
+  color: #999;
+  font-size: 14px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.skill {
+  border: 1px solid #34394a;
+  padding: 9px 15px;
+  border-radius: 30px;
+  color: #c6c6d2;
+  font-size: 13px;
+}
+
+.project {
+  background: #141720;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #282d3a;
+}
+
+.project p {
+  color: #999;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.status {
+  display: inline-block;
+  color: #a78bfa;
+  font-size: 11px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.contact {
+  background: #141720;
+  padding: 35px;
+  border-radius: 12px;
+  border: 1px solid #292e3d;
+}
+
+.contact p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #777;
+  border-top: 1px solid #252832;
+  font-size: 13px;
+}
+
+@media(max-width:600px) {
+  .hero { min-height: 65vh; }
+  .section-title { font-size: 27px; }
+  section { padding: 55px 0; }
+  .contact { padding: 25px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">BRAZO ROY.</div>
+    <a href="#contact">LET'S CONNECT ↗</a>
+  </div>
+</nav>
+
+<header class="container hero">
+  <span class="tag">PERSONAL PORTFOLIO</span>
+  <h1>Creative Mind.<br>
+  <span class="gradient">Technical Curiosity.</span></h1>
+  <p>
+    I'm Brazo Roy. A video editor, graphic designer
+    and technology enthusiast exploring the intersection
+    of creativity and technology.
+  </p>
+  <a class="button" href="#about">EXPLORE MY WORLD ↘</a>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me.</h2>
+    <p class="about">
+      I have over 3 years of experience in video editing
+      and graphic design. I've worked on social media
+      content, YouTube videos, Amazon product videos,
+      promotional videos and more.
+      <br><br>
+      Beyond creative work, I'm interested in coding,
+      technology and ethical hacking. I enjoy learning
+      new things, experimenting and challenging myself
+      with different skills.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>1000+</strong>
+        <span>Reels Edited</span>
+      </div>
+      <div class="stat">
+        <strong>200+</strong>
+        <span>Long-form Videos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="creative">
+  <div class="container">
+    <h2 class="section-title">Creative Work.</h2>
+    <p class="section-intro">My creative interests and professional work.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Video Editing</h3>
+        <p>YouTube videos, Instagram reels, shorts, gaming videos, montages and promotional content.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>Amazon listing images, product creatives, thumbnails, advertising designs and visual content.</p>
+      </div>
+      <div class="card">
+        <h3>Visual Storytelling</h3>
+        <p>Cinematic concepts, fictional stories, AI-generated visuals and creative experiments.</p>
+      </div>
+    </div>
+
+    <div class="skills">
+      <span class="skill">Premiere Pro</span>
+      <span class="skill">After Effects</span>
+      <span class="skill">Photoshop</span>
+    </div>
+  </div>
+</section>
+
+<section id="technology">
+  <div class="container">
+    <h2 class="section-title">Exploring Technology.</h2>
+    <p class="section-intro">
+      Things I'm interested in learning and developing.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="status">LEARNING JOURNEY</span>
+        <h3>Web Development</h3>
+        <p>Exploring HTML, CSS, JavaScript and how websites work.</p>
+      </div>
+      <div class="card">
+        <span class="status">LEARNING JOURNEY</span>
+        <h3>Programming</h3>
+        <p>Developing coding knowledge and problem-solving skills.</p>
+      </div>
+      <div class="card">
+        <span class="status">LEARNING JOURNEY</span>
+        <h3>Ethical Hacking</h3>
+        <p>Exploring cybersecurity, ethical security testing and digital protection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects & Experiments.</h2>
+    <p class="section-intro">
+      A space for my work, experiments and future projects.
+    </p>
+
+    <div class="project">
+      <span class="status">COMING SOON</span>
+      <h3>My First Website</h3>
+      <p>Building and publishing my personal portfolio using HTML, CSS and GitHub Pages.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact">
+      <h2 class="section-title">Let's Connect.</h2>
+      <p>
+        Interested in creative projects, technology
+        or collaborating on something interesting?
+      </p>
+      <p>Contact details coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Brazo Roy. Built with curiosity.
+</footer>
+
+</body>
+</html>
