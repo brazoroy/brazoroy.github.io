@@ -4,218 +4,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brazo Roy | Creative & Technology</title>
-<meta name="description" content="Personal portfolio of Brazo Roy - Video Editor, Graphic Designer and technology enthusiast.">
+<title>Brazo Roy | Video Editor & Graphic Designer</title>
+<meta name="description" content="Brazo Roy - Professional Video Editor and Graphic Designer.">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ background:#08090d;color:#f5f5f5;
+ font-family:Arial,Helvetica,sans-serif;
+ line-height:1.6
 }
-
-html { scroll-behavior: smooth; }
-
-body {
-  background: #090b10;
-  color: #f5f5f5;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+nav{padding:23px 0;border-bottom:1px solid #24242b}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:21px;font-weight:800;letter-spacing:2px}
+.nav a{font-size:12px;color:#aaa;letter-spacing:1px}
+.hero{
+ min-height:82vh;display:flex;flex-direction:column;
+ justify-content:center;position:relative;overflow:hidden;
+ padding:90px 0
 }
-
-a { color: inherit; text-decoration: none; }
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+.hero:before{
+ content:"";position:absolute;width:500px;height:500px;
+ background:radial-gradient(circle,#39275d55,transparent 70%);
+ right:-200px;top:0;pointer-events:none
 }
-
-nav {
-  padding: 22px 0;
-  border-bottom: 1px solid #252832;
+.eyebrow{
+ color:#b59aff;font-size:12px;letter-spacing:4px;
+ text-transform:uppercase
 }
-
-.nav-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h1{
+ font-size:clamp(48px,10vw,100px);
+ line-height:1.04;letter-spacing:-4px;
+ margin:25px 0;font-weight:800
 }
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
+.gradient{
+ background:linear-gradient(100deg,#c5a8ff,#829aff);
+ -webkit-background-clip:text;background-clip:text;
+ color:transparent
 }
-
-nav a { color: #aaa; font-size: 13px; }
-
-.hero {
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 80px 0;
+.hero p{max-width:570px;color:#aaa;font-size:17px}
+.btn{
+ display:inline-block;margin-top:30px;padding:14px 25px;
+ border:1px solid #a78bfa;border-radius:4px;
+ font-size:12px;letter-spacing:1px;transition:.3s
 }
-
-.tag {
-  color: #a78bfa;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+.btn:hover{background:#a78bfa;color:#08090d}
+.hero-note{
+ margin-top:65px;color:#666;font-size:11px;
+ letter-spacing:2px
 }
-
-h1 {
-  font-size: clamp(44px, 9vw, 82px);
-  line-height: 1.08;
-  margin: 22px 0;
-  letter-spacing: -3px;
+section{padding:90px 0;border-top:1px solid #202127}
+.section-label{
+ color:#a78bfa;font-size:11px;letter-spacing:3px;
+ text-transform:uppercase
 }
-
-.gradient {
-  background: linear-gradient(90deg,#a78bfa,#60a5fa);
-  -webkit-background-clip: text;
-  color: transparent;
+h2{font-size:36px;margin:12px 0 18px;letter-spacing:-1px}
+.intro{color:#aaa;max-width:750px;font-size:16px}
+.stats{
+ display:grid;grid-template-columns:repeat(2,1fr);
+ gap:15px;max-width:550px;margin-top:35px
 }
-
-.hero p {
-  max-width: 600px;
-  color: #a5a5b0;
-  font-size: 17px;
+.stat{
+ padding:22px;background:#12131a;
+ border:1px solid #292a33;border-radius:6px
 }
-
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 13px 23px;
-  border: 1px solid #8b7af4;
-  border-radius: 6px;
-  color: white;
-  width: fit-content;
+.stat strong{display:block;font-size:32px;color:#b69bff}
+.stat span{font-size:12px;color:#888}
+.cards{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+ gap:18px;margin-top:35px
 }
-
-section { padding: 75px 0; }
-
-.section-title {
-  font-size: 32px;
-  margin-bottom: 12px;
+.card{
+ background:#12131a;border:1px solid #292a33;
+ border-radius:7px;padding:27px;transition:.3s
 }
-
-.section-intro {
-  color: #999;
-  margin-bottom: 30px;
+.card:hover{transform:translateY(-5px);border-color:#8d76d8}
+.number{font-size:12px;color:#a78bfa;letter-spacing:2px}
+.card h3{font-size:21px;margin:13px 0}
+.card p{font-size:14px;color:#999}
+.software{
+ display:flex;flex-wrap:wrap;gap:12px;margin-top:25px
 }
-
-.about {
-  color: #b8b8c2;
-  max-width: 750px;
+.software span{
+ padding:11px 18px;border:1px solid #343540;
+ border-radius:4px;font-size:13px;color:#ccc
 }
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 15px;
-  margin-top: 30px;
-  max-width: 550px;
+.experience{
+ background:linear-gradient(120deg,#171323,#10121a);
+ border:1px solid #343044;border-radius:8px;padding:35px;
+ margin-top:35px
 }
-
-.stat {
-  background: #141720;
-  border: 1px solid #252a38;
-  padding: 20px;
-  border-radius: 9px;
+.experience strong{font-size:42px;color:#b69bff}
+.experience p{color:#aaa;font-size:14px}
+.contact-box{
+ padding:40px;background:#14131c;
+ border:1px solid #393044;border-radius:8px
 }
-
-.stat strong {
-  display: block;
-  font-size: 28px;
-  color: #a78bfa;
+.contact-box p{color:#aaa;max-width:550px}
+footer{
+ padding:30px 0;text-align:center;color:#666;
+ font-size:12px;border-top:1px solid #202127
 }
-
-.stat span { color: #aaa; font-size: 13px; }
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 18px;
-  margin-top: 30px;
-}
-
-.card {
-  background: #141720;
-  border: 1px solid #282d3a;
-  padding: 25px;
-  border-radius: 10px;
-}
-
-.card h3 { margin-bottom: 10px; }
-
-.card p {
-  color: #999;
-  font-size: 14px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 25px;
-}
-
-.skill {
-  border: 1px solid #34394a;
-  padding: 9px 15px;
-  border-radius: 30px;
-  color: #c6c6d2;
-  font-size: 13px;
-}
-
-.project {
-  background: #141720;
-  padding: 22px;
-  border-radius: 10px;
-  border: 1px solid #282d3a;
-}
-
-.project p {
-  color: #999;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-.status {
-  display: inline-block;
-  color: #a78bfa;
-  font-size: 11px;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-}
-
-.contact {
-  background: #141720;
-  padding: 35px;
-  border-radius: 12px;
-  border: 1px solid #292e3d;
-}
-
-.contact p {
-  color: #aaa;
-  margin-top: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 30px 0;
-  color: #777;
-  border-top: 1px solid #252832;
-  font-size: 13px;
-}
-
-@media(max-width:600px) {
-  .hero { min-height: 65vh; }
-  .section-title { font-size: 27px; }
-  section { padding: 55px 0; }
-  .contact { padding: 25px; }
+@media(max-width:600px){
+ h1{letter-spacing:-2px}
+ h2{font-size:29px}
+ section{padding:65px 0}
+ .hero{min-height:75vh}
+ .experience,.contact-box{padding:25px}
 }
 </style>
 </head>
@@ -223,137 +121,122 @@ footer {
 <body>
 
 <nav>
-  <div class="container nav-inner">
-    <div class="logo">BRAZO ROY.</div>
-    <a href="#contact">LET'S CONNECT ↗</a>
-  </div>
+ <div class="container nav">
+  <div class="logo">BRAZO ROY.</div>
+  <a href="#contact">LET'S CONNECT ↗</a>
+ </div>
 </nav>
 
 <header class="container hero">
-  <span class="tag">PERSONAL PORTFOLIO</span>
-  <h1>Creative Mind.<br>
-  <span class="gradient">Technical Curiosity.</span></h1>
-  <p>
-    I'm Brazo Roy. A video editor, graphic designer
-    and technology enthusiast exploring the intersection
-    of creativity and technology.
-  </p>
-  <a class="button" href="#about">EXPLORE MY WORLD ↘</a>
+ <span class="eyebrow">VIDEO EDITOR · GRAPHIC DESIGNER</span>
+ <h1>I CREATE<br><span class="gradient">VISUAL STORIES.</span></h1>
+ <p>
+  Turning ideas into powerful visual experiences.
+  I create engaging videos and compelling designs
+  that make every story worth watching.
+ </p>
+ <a href="#work" class="btn">EXPLORE MY WORK ↘</a>
+ <div class="hero-note">CREATIVITY · STORYTELLING · VISUAL DESIGN</div>
 </header>
 
 <section id="about">
-  <div class="container">
-    <h2 class="section-title">About Me.</h2>
-    <p class="about">
-      I have over 3 years of experience in video editing
-      and graphic design. I've worked on social media
-      content, YouTube videos, Amazon product videos,
-      promotional videos and more.
-      <br><br>
-      Beyond creative work, I'm interested in coding,
-      technology and ethical hacking. I enjoy learning
-      new things, experimenting and challenging myself
-      with different skills.
-    </p>
-
-    <div class="stats">
-      <div class="stat">
-        <strong>1000+</strong>
-        <span>Reels Edited</span>
-      </div>
-      <div class="stat">
-        <strong>200+</strong>
-        <span>Long-form Videos</span>
-      </div>
-    </div>
+ <div class="container">
+  <span class="section-label">01 / ABOUT ME</span>
+  <h2>Behind the Creativity.</h2>
+  <p class="intro">
+   I'm Brazo Roy, a video editor and graphic designer
+   with over 3 years of experience. I have worked on
+   YouTube content, Instagram reels, Amazon product
+   videos, promotional videos, gaming videos and more.
+   <br><br>
+   I enjoy transforming ideas into engaging visual
+   experiences through creative editing, design and
+   storytelling.
+  </p>
+  <div class="stats">
+   <div class="stat">
+    <strong>1000+</strong>
+    <span>REELS EDITED</span>
+   </div>
+   <div class="stat">
+    <strong>200+</strong>
+    <span>LONG-FORM VIDEOS</span>
+   </div>
   </div>
+ </div>
 </section>
 
-<section id="creative">
-  <div class="container">
-    <h2 class="section-title">Creative Work.</h2>
-    <p class="section-intro">My creative interests and professional work.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Video Editing</h3>
-        <p>YouTube videos, Instagram reels, shorts, gaming videos, montages and promotional content.</p>
-      </div>
-      <div class="card">
-        <h3>Graphic Design</h3>
-        <p>Amazon listing images, product creatives, thumbnails, advertising designs and visual content.</p>
-      </div>
-      <div class="card">
-        <h3>Visual Storytelling</h3>
-        <p>Cinematic concepts, fictional stories, AI-generated visuals and creative experiments.</p>
-      </div>
-    </div>
-
-    <div class="skills">
-      <span class="skill">Premiere Pro</span>
-      <span class="skill">After Effects</span>
-      <span class="skill">Photoshop</span>
-    </div>
+<section id="work">
+ <div class="container">
+  <span class="section-label">02 / WHAT I DO</span>
+  <h2>My Creative World.</h2>
+  <p class="intro">A combination of visual storytelling and thoughtful design.</p>
+  <div class="cards">
+   <div class="card">
+    <span class="number">01 / VIDEO</span>
+    <h3>Video Editing</h3>
+    <p>YouTube videos, Shorts, Instagram Reels, gaming videos, montages, promotional videos and cinematic storytelling.</p>
+   </div>
+   <div class="card">
+    <span class="number">02 / DESIGN</span>
+    <h3>Graphic Design</h3>
+    <p>Amazon listing images, product advertisements, thumbnails, social media creatives and visual branding.</p>
+   </div>
+   <div class="card">
+    <span class="number">03 / VISUALS</span>
+    <h3>Creative Production</h3>
+    <p>AI-assisted visuals, fictional stories, cinematic concepts and creative video experiments.</p>
+   </div>
   </div>
+ </div>
 </section>
 
-<section id="technology">
-  <div class="container">
-    <h2 class="section-title">Exploring Technology.</h2>
-    <p class="section-intro">
-      Things I'm interested in learning and developing.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <span class="status">LEARNING JOURNEY</span>
-        <h3>Web Development</h3>
-        <p>Exploring HTML, CSS, JavaScript and how websites work.</p>
-      </div>
-      <div class="card">
-        <span class="status">LEARNING JOURNEY</span>
-        <h3>Programming</h3>
-        <p>Developing coding knowledge and problem-solving skills.</p>
-      </div>
-      <div class="card">
-        <span class="status">LEARNING JOURNEY</span>
-        <h3>Ethical Hacking</h3>
-        <p>Exploring cybersecurity, ethical security testing and digital protection.</p>
-      </div>
-    </div>
+<section id="software">
+ <div class="container">
+  <span class="section-label">03 / MY TOOLKIT</span>
+  <h2>Tools I Work With.</h2>
+  <p class="intro">Software I use to bring creative ideas to life.</p>
+  <div class="software">
+   <span>Adobe Premiere Pro</span>
+   <span>Adobe After Effects</span>
+   <span>Adobe Photoshop</span>
   </div>
+ </div>
 </section>
 
-<section id="projects">
-  <div class="container">
-    <h2 class="section-title">Projects & Experiments.</h2>
-    <p class="section-intro">
-      A space for my work, experiments and future projects.
-    </p>
-
-    <div class="project">
-      <span class="status">COMING SOON</span>
-      <h3>My First Website</h3>
-      <p>Building and publishing my personal portfolio using HTML, CSS and GitHub Pages.</p>
-    </div>
+<section id="experience">
+ <div class="container">
+  <span class="section-label">04 / EXPERIENCE</span>
+  <h2>Experience That Matters.</h2>
+  <div class="experience">
+   <strong>3+ Years</strong>
+   <p>Video Editing & Graphic Design</p>
+   <br>
+   <p>Experience creating content for YouTube, Instagram,
+   Facebook, TikTok, X and Amazon-focused projects.</p>
   </div>
+ </div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <div class="contact">
-      <h2 class="section-title">Let's Connect.</h2>
-      <p>
-        Interested in creative projects, technology
-        or collaborating on something interesting?
-      </p>
-      <p>Contact details coming soon.</p>
-    </div>
+ <div class="container">
+  <span class="section-label">05 / GET IN TOUCH</span>
+  <div class="contact-box">
+   <h2>Have a Project in Mind?</h2>
+   <p>
+    Let's create something meaningful.
+    I'm open to creative collaborations and
+    interesting projects.
+   </p>
+   <p style="margin-top:20px;color:#b69bff">
+    Contact details coming soon.
+   </p>
   </div>
+ </div>
 </section>
 
 <footer>
-  © 2026 Brazo Roy. Built with curiosity.
+ © 2026 BRAZO ROY. ALL RIGHTS RESERVED.
 </footer>
 
 </body>
